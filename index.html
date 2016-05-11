@@ -9,6 +9,8 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
         <link href='src/css/main.css' rel='stylesheet' type='text/css'>
+
+        <script src="./vendor/jquery-2.2.3.min.js"></script>
     </head>
 
     <body>
@@ -54,13 +56,130 @@
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Vestibulum auctor dapibus neque.</li>
                 </ul>
-            </section>
-            <section class="col-md-8 col-xs-12">
 
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h3>Amazing Mobie Info</h3>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <img alt="mobile-image" src="./src/images/mobile.png" aria-describedby="mobileImage">
+                        <p id="mobileImage" class="hidden">This is URBANK image.</p>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <th></th>
+                            <th class="table-head text-right"><p>Annual Percentage Yield</p></th>
+                            <th class="table-head text-right"><p>Est Earnings for 1 year*</p></th>
+                        </thead>
+
+                        <tbody data-js="check-rate-table"></tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="table-head text-right">*Based on $50,000 deposit.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </section>
+
+            <section class="col-md-4 col-xs-12">
+
+                <button class="btn btn-primary section__button--login">Submit</button>
+
+                <!-- Tabs Navigation -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#news">News</a></li>
+                    <li><a data-toggle="tab" href="#archive">Archive</a></li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content">
+                    <div id="news" class="tab-pane fade in active">
+                        <ul>
+                            <li>
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis</p>
+                            </li>
+                            <li>
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis</p>
+                            </li>
+                            <li>
+                                <h4>Lorem ipsum dolor</h4>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="archive" class="tab-pane fade">
+                        <ul>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </section>
 
-        <script src="./vendor/jquery-2.2.3.min.js"></script>
+        <script>
+            var tableData = [
+                {
+                    "name": "Big Guy Financial",
+                    "apy": 0.75,
+                    "earnings": 376.41
+                },
+                {
+                    "name": "URBank",
+                    "apy": 0.87,
+                    "earnings": 436.89
+                },
+                {
+                    "name": "Dewey, Cheatam & Howe",
+                    "apy": 0.01,
+                    "earnings": 5.00
+                },
+                {
+                    "name": "First Onion",
+                    "apy": 0.01,
+                    "earnings": 5.00
+                },
+                {
+                    "name": "Bank of Everywhere",
+                    "apy": 0.01,
+                    "earnings": 5.00
+                }
+            ];
+
+            var rowList = [];
+
+            tableData.forEach(function (data) {
+                var row;
+                row = ['<tr>',
+                    '<td>' + data.name + '</td>',
+                    '<td class="text-right">' + data.apy + '</td>',
+                    '<td class="text-right">' + data.earnings + '</td>',
+                    '</tr>'].join('');
+                rowList.push(row);
+            });
+            $('table').find('[data-js="check-rate-table"]').empty().append(rowList.join(''));
+        </script>
+
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
