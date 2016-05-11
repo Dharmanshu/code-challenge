@@ -1,0 +1,12 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "file-system": "^2.2.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "jquery": "^2.2.3",
+    "require": "^2.4.20"
+  }
+}
