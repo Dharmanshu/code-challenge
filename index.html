@@ -92,7 +92,27 @@
 
             <section class="col-md-4 col-xs-12">
 
-                <button class="btn btn-primary section__button--login">Submit</button>
+                <button class="btn btn-primary" data-action="login">Login</button>
+
+                <!-- Login Modal -->
+                <div class="modal" data-js="modal" role="dialog" aria-labelledby="Log in Modal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2 class="modal-title">Sign In To Your Account</h2>
+                                <form>
+                                    <P><span class="title">Username</span> <input name="" type="text" /></P><br>
+                                    <P><span class="title">Password</span> <input name="" type="password" /></P><br>
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
                 <!-- Tabs Navigation -->
                 <ul class="nav nav-tabs">
@@ -181,5 +201,6 @@
         </script>
 
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./src/common/login-modal.js"></script>
     </body>
 </html>
