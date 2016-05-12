@@ -13,32 +13,36 @@
     </head>
 
     <body>
-        <header class="container">
-            <nav class="navbar navbar-default navbar-fixed-top section__nav" role="navigation">
+        <header>
+            <nav class = "navbar navbar-default navbar-fixed-top section__nav" role = "navigation">
                 <div class="container">
-
-                    <a class="navbar-brand" href="#">
-                        <img alt="URBANK" src="./src/images/bank-symbol.png" aria-describedby="urBank">
-                        <p id="urBank" class="hidden">This is URBANK image.</p>
-                    </a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <div class = "navbar-header">
+                    <button type = "button" class = "navbar-toggle"
+                            data-toggle = "collapse" data-target="#navCollapse" aria-expanded="false">
+                        <span class = "sr-only">Toggle navigation</span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
                     </button>
 
-
-                    <div class="collapse navbar-collapse navHeaderCollapse">
-                        <ul class="nav navbar-nav navbar-right section__nav--list">
-                            <li class="nav"><a href="#">home</a></li>
-                            <li class="nav"><a href="#">employee</a></li>
-                            <li class="nav"><a href="#">company</a></li>
-                            <li class="nav"><a href="#">services</a></li>
-                            <li class="nav"><a href="#">contact</a></li>
-
-                        </ul>
-                    </div>
+                    <a class="navbar-brand" href="#">
+                        <img alt="URBANK" src="./src/images/bank-symbol.png" aria-describedby="urBank" height="45">
+                        <p id="urBank" class="hidden">This is URBANK image.</p>
+                    </a>
                 </div>
+
+                <div class = "collapse navbar-collapse" id = "navCollapse">
+
+                    <ul class = "nav navbar-nav navbar-right section__nav--list">
+                        <li class="nav"><a href="#">home</a></li>
+                        <li class="nav"><a href="#">employee</a></li>
+                        <li class="nav"><a href="#">company</a></li>
+                        <li class="nav"><a href="#">services</a></li>
+                        <li class="nav"><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                </div>
+
             </nav>
         </header>
 
@@ -97,6 +101,7 @@
                         <div class="modal-content">
 
                             <div class="modal-body">
+                                <a href="#close" title="Close" class="close"><img src="images/close.png"></a>
                                 <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <div class="row">
                                     <div class="col-xs-12">
@@ -161,6 +166,23 @@
                 </div>
             </section>
         </section>
+
+        <footer>
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">&copy; 2014 URBank</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">employee</a></li>
+                        <li><a href="#">company</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
 
         <script>
             var tableData = [
