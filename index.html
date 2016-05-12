@@ -47,7 +47,7 @@
                 <h1>Best Bank Ever!</h1>
                 <p class="section__article mb2">Pellentesque habitant morbi tristique senectus et netus et <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
 
-                <p class="reasons">Reasons We're Awesome:</p>
+                <p class="reasp class=title"s">Reasons We're Awesome:</p>
                 <ul class="section__list mb3">
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Aliquam tincidunt mauris eu risus.</li>
@@ -66,7 +66,7 @@
                 <h2 id="rates"><span class="check">Rates |</span> Check them out.</h2>
 
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table">
                         <thead>
                             <th aria-hidden="true" class="no-heading">No Heading</th>
                             <th class="table-head text-right" scope="col">Annual Percentage Yield</th>
@@ -87,9 +87,9 @@
 
             </section>
 
-            <section class="col-md-4 col-xs-12">
+            <section class="col-md-3 col-xs-12">
 
-                <button class="btn btn-primary" data-action="login">Login</button>
+                <button class="btn btn-primary login mb2 mt3" data-action="login">Login</button>
 
                 <!-- Login Modal -->
                 <div class="modal" data-js="modal" role="dialog" aria-labelledby="Log in Modal" aria-hidden="true">
@@ -97,17 +97,20 @@
                         <div class="modal-content">
 
                             <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h2 class="modal-title">Sign In To Your Account</h2>
-                                <form>
-                                    <P><span class="title">Username</span> <input name="" type="text" /></P><br>
-                                    <P><span class="title">Password</span> <input name="" type="password" /></P><br>
-                                    <button type="button" class="btn btn-primary">Login</button>
-                                </form>
+                                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h2 class="modal-title">Sign In To Your Account</h2>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <span class="bold-text"> Username </span> <input name="" type="text" />
+                                        <span class="bold-text"> Password </span> <input name="" type="password" />
+                                        <button type="button" class="btn btn-primary pull-right login mb1">Login</button>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
@@ -119,26 +122,31 @@
 
                 <!-- Tabs Content -->
                 <div class="tab-content">
-                    <div id="news" class="tab-pane fade in active">
-                        <ul>
-                            <li>
-                                <h4>Lorem ipsum dolor</h4>
+                    <div id="news" class="tab-pane fade in active mt2">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="title mb0">Lorem ipsum dolor</p>
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                                     turpis</p>
-                            </li>
-                            <li>
-                                <h4>Lorem ipsum dolor</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="title mb0">Lorem ipsum dolor</p>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                turpis</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="title mb0">Lorem ipsum dolor</p>
                                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                                     turpis</p>
-                            </li>
-                            <li>
-                                <h4>Lorem ipsum dolor</h4>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis</p>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div id="archive" class="tab-pane fade">
+
+                    <div id="archive" class="tab-pane fade mt2">
                         <ul>
                             <li>Lorem ipsum dolor</li>
                             <li>Lorem ipsum dolor</li>

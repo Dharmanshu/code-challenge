@@ -1,0 +1,12 @@
+tbody tr:nth-child(even) {
+  background: $Bubbles
+}
+
+tbody tr:nth-child(odd) {
+  background: $Pot-Pourri
+}
+
+tr:nth-child(1) td {
+  color: $black;
+  font-weight: 600;
+}

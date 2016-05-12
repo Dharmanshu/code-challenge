@@ -1,0 +1,40 @@
+.modal-content {
+  width: 422px;
+  height: 248px;
+  padding: 5px 10px;
+  border: 0.5px black solid;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal-body{
+  width: 400px;
+  height: 236px;
+  padding: 0px;
+}
+
+.modal button {
+  width: 135px;
+  margin-right: 25px;
+}
+
+.modal {
+  top:10%;
+  outline: none;
+}
+
+h2.modal-title {
+  font-size: 28px;
+  font-weight: 100;
+  line-height: normal;
+  margin: 10px 0;
+}
+
+.modal-content input {
+  border: 1px solid $header-blue;
+  height: 34px;
+  width: 295px;
+  margin: 10px;
+}
+
