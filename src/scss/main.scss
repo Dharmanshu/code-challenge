@@ -1,18 +1,4 @@
-body {
-  padding-top: 70px;
-}
+@import "components/variables";
+@import "misc";
+@import "components/nav";
 
-@-moz-document url-prefix() {
-  fieldset { display: table-cell; }
-}
-
-button{
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important;
-}
-
-.modal {
-  top:10%;
-  outline: none;
-}

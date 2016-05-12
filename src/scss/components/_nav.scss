@@ -1,0 +1,20 @@
+
+.section__nav {
+  background: $header-blue;
+  font-size: 9pt;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul.section__nav--list > li.nav > a{
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.section__nav a:hover, nav a:active {
+  background-color: $nav-header;
+}
+.section__nav a#pull {
+  display: none;
+}
