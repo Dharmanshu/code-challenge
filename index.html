@@ -63,17 +63,19 @@
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
                     </div>
                     <div class="col-xs-3">
-                        <img alt="mobile-image" src="./src/images/mobile.png" aria-describedby="mobileImage">
+                        <img alt="Mobile Image" src="./src/images/mobile.png" aria-describedby="mobileImage">
                         <p id="mobileImage" class="hidden">This is URBANK image.</p>
                     </div>
                 </div>
 
+                <h2 id="rates"><span class="check">Rates |</span> Check them out.</h2>
+
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
-                            <th></th>
-                            <th class="table-head text-right"><p>Annual Percentage Yield</p></th>
-                            <th class="table-head text-right"><p>Est Earnings for 1 year*</p></th>
+                            <th aria-hidden="true" class="hidden">No Heading</th>
+                            <th class="table-head text-right" scope="col"><p>Annual Percentage Yield</p></th>
+                            <th class="table-head text-right" scope="col"><p>Est Earnings for 1 year*</p></th>
                         </thead>
 
                         <tbody data-js="check-rate-table"></tbody>
