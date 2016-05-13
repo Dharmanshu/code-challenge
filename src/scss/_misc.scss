@@ -24,8 +24,8 @@ button.login {
   box-sizing: border-box;
 }
 
-h1{
-  color: $side-purple;
+p.rates-header{
+  font-size: 28px;
 }
 
 .section__article > a{
@@ -33,7 +33,7 @@ h1{
   text-decoration: underline;
 }
 
-p.reasons{
+p.reasons-title{
   display: block;
   font-size: 1.17em;
   -webkit-margin-before: 0.5em;
