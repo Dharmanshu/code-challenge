@@ -6,10 +6,18 @@ body {
   fieldset { display: table-cell; }
 }
 
+p.mobile-desc{
+  width: 100%;
+}
+
 button{
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
+}
+
+h1{
+  color: $side-purple;
 }
 
 button.login {
@@ -26,6 +34,12 @@ button.login {
 
 p.rates-header{
   font-size: 28px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $white;
+  height: 4px;
+  width: 25px;
 }
 
 .section__article > a{
