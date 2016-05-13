@@ -1,7 +1,6 @@
-"use strict"
-
 $(document).ready(function () {
-
+    "use strict";
+    
     $.getJSON("https://api.myjson.com/bins/11h4i",
         function (data) {
             var rowList = [];

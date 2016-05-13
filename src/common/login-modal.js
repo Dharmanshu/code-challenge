@@ -1,6 +1,6 @@
-'use strict'
-
 $(document).ready(function() {
+  'use strict';
+  
   $('[data-action="login"]').click(function(event) {
     event.preventDefault();
 

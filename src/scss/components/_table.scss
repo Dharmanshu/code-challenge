@@ -1,14 +1,18 @@
-tbody tr:nth-child(even) {
-  background: $Bubbles
-}
-
-tbody tr:nth-child(odd) {
-  background: $Pot-Pourri
-}
-
-tbody tr:nth-child(1) td {
-  color: $black;
-  font-weight: 600;
+tbody {
+  tr {
+    &:nth-child(even) {
+      background: $Bubbles;
+    }
+    &:nth-child(odd) {
+      background: $Pot-Pourri;
+    }
+    &:nth-child(1) {
+      td {
+        color: $black;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 thead th, tfoot tr>td{

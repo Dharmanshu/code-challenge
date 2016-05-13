@@ -6,7 +6,7 @@
         grunt.initConfig({
             pkg: grunt.file.readJSON('./package.json'),
             jshint: {
-                files: ['Gruntfile.js', 'src/*.js'],
+                files: ['Gruntfile.js', 'src/common/*.js'],
                 options: {
                     globals: {
                         jQuery: true

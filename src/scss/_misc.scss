@@ -10,26 +10,25 @@ p.mobile-desc{
   width: 100%;
 }
 
-button{
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  border-radius: 0 !important;
-}
-
 h1{
   color: $side-purple;
 }
 
-button.login {
-  height: 35px;
-  width: 220px;
-  padding-top: 5px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  background-color: #650360;
-  font-weight: bold;
-  box-sizing: border-box;
+button {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  &.login {
+    height: 35px;
+    width: 220px;
+    padding-top: 5px;
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    background-color: $side-purple;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
 }
 
 p.rates-header{
@@ -42,7 +41,7 @@ p.rates-header{
   width: 25px;
 }
 
-.section__article > a{
+.bank-desc > a{
   color: $header-blue;
   text-decoration: underline;
 }
@@ -55,38 +54,32 @@ p.reasons-title{
   font-weight: bold;
 }
 
-.mobile-info p.header {
-  display: block;
-  font-weight: bold;
-  color: $side-purple;
-}
-
-.mobile-info {
-  padding-top: 15px;
-  position: relative;
-}
-
-.mobile-info img {
-  position: absolute;
-  right: 25px;
-  bottom: 15px;
-}
-
-.mobile-info {
-  padding: 15px;
-  background-color: $box-green;
-  margin-top: 30px;
-}
-
 th.no-heading{
   visibility: hidden;
 }
 
-.mobile-info p {
-  width: 80%;
+
+.mobile-info {
+  position: relative;
+  padding: 15px;
+  background-color: $box-green;
+  margin-top: 30px;
+  p {
+    width: 80%;
+    &.header {
+      display: block;
+      font-weight: bold;
+      color: $side-purple;
+    }
+  }
+  img {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
 }
 
-.section__list{
+.reasons-list{
   padding-left: 16px;
 }
 
