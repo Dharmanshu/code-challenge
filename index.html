@@ -183,51 +183,9 @@
             </nav>
         </footer>
 
-        <script>
-            var tableData = [
-                {
-                    "name": "URBank",
-                    "apy": 0.87,
-                    "earnings": 436.89
-                },
-                {
-                    "name": "Big Guy Financial",
-                    "apy": 0.75,
-                    "earnings": 376.41
-                },
-                {
-                    "name": "Dewey, Cheatam & Howe",
-                    "apy": 0.01,
-                    "earnings": 5.00
-                },
-                {
-                    "name": "First Onion",
-                    "apy": 0.01,
-                    "earnings": 5.00
-                },
-                {
-                    "name": "Bank of Everywhere",
-                    "apy": 0.01,
-                    "earnings": 5.00
-                }
-            ];
-
-            var rowList = [];
-
-            tableData.forEach(function (data) {
-                var row;
-                row = ['<tr>',
-                    '<td>' + data.name + '</td>',
-                    '<td class="text-right">' + data.apy + '</td>',
-                    '<td class="text-right">' + data.earnings + '</td>',
-                    '</tr>'].join('');
-                rowList.push(row);
-            });
-
-            $('table').find('[data-js="check-rate-table"]').empty().append(rowList.join(''));
-        </script>
-
+        <!-- Scripts -->
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./src/common/login-modal.js"></script>
+        <script src="./src/common/table.js"></script>
     </body>
 </html>
