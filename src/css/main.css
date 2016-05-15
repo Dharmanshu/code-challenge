@@ -1,5 +1,5 @@
 body {
-  padding: 70px 0px; }
+  padding: 70px 0 105px 0; }
 
 @-moz-document url-prefix() {
   fieldset {
@@ -139,26 +139,33 @@ thead th, tfoot tr > td {
   font-size: 12px; }
 
 .modal-content {
-  width: 422px;
+  width: 70%;
   height: 248px;
   padding: 5px 10px;
   border: 0.5px black solid;
-  -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
   border-radius: 0 !important; }
+  .modal-content input {
+    border: 1px solid #328FC2;
+    height: 34px;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important; }
+  .modal-content label {
+    padding: 0px; }
 
 .modal-body {
   width: 400px;
   height: 236px;
   padding: 0px; }
 
-.modal button {
-  width: 135px;
-  margin-right: 25px; }
-
 .modal {
   top: 10%;
   outline: none; }
+  .modal button {
+    width: 135px;
+    margin: 5px 15px 0 0; }
 
 h2.modal-title {
   font-size: 28px;
@@ -166,17 +173,40 @@ h2.modal-title {
   line-height: normal;
   margin: 10px 0; }
 
-.modal-content input {
-  border: 1px solid #328FC2;
-  height: 34px;
-  width: 295px;
-  margin: 10px; }
-
 .glyphicon-remove {
   font-weight: bold;
   color: #006899;
   font-size: 15px; }
 
+div.login-form.col-md-8 {
+  padding-left: 0; }
+
+@media (min-width: 991px) {
+  .modal-content input {
+    margin: 10px 0; }
+  .modal-content label {
+    padding-bottom: 15px;
+    padding-top: 15px; }
+
+  .form-group {
+    margin-bottom: 15px; }
+
+  .modal button {
+    margin-right: 50px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-group {
+    margin-bottom: 10px; }
+
+  .modal-content {
+    height: 255px; } }
+@media (max-width: 767px) {
+  .modal-content {
+    width: auto;
+    height: auto; }
+
+  .modal-body {
+    width: auto;
+    height: auto; } }
 .nav-tabs {
   width: 220px; }
   .nav-tabs > li > a {

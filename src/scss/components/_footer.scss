@@ -26,3 +26,21 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  footer {
+    .navbar-default {
+      ul.list-inline{
+        float:none;
+        text-align: center;
+      }
+      .navbar-brand {
+        text-align: center;
+      }
+    }
+  }
+
+  p.mobile-desc{
+    width: 70%;
+  }
+}
