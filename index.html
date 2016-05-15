@@ -96,7 +96,7 @@
                 <button class="btn btn-primary login mb2 mt3" data-action="login">Login</button>
 
                 <!-- Login Modal -->
-                <div class="modal" data-js="modal" role="dialog" aria-labelledby="Log in Modal" aria-hidden="true">
+                <div class="modal" id="responsive" data-js="modal" role="dialog" aria-labelledby="Log in Modal" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
 
@@ -108,8 +108,24 @@
                                     </div>
 
                                     <div class="col-xs-12">
-                                        <span class="bold-text"> Username </span> <input name="" type="text" />
-                                        <span class="bold-text"> Password </span> <input name="" type="password" />
+                                        <div class="form-group">
+                                            <label for="userName" class="col-md-3 control-label">User Name</label>
+                                            <div class="login-form col-md-8">
+                                                <input type="text" class="form-control" id="userName">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="password" class="col-md-3 control-label">Password</label>
+                                            <div class="login-form col-md-8">
+                                                <input type="password" class="form-control" id="password">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
                                         <button type="button" class="btn btn-primary pull-right login mb1">Login</button>
                                     </div>
                                 </div>
