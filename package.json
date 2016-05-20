@@ -2,14 +2,14 @@
   "name": "code-challenge",
   "version": "1.0.0",
   "dependencies": {
-    "file-system": "^2.2.1",
+    "file-system": "^2.2.1"
+  },
+  "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-express": "^1.4.1",
-    "grunt-sass": "^1.2.0"
-  },
-  "devDependencies": {
+    "grunt-sass": "^1.2.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
